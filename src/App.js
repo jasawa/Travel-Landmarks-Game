@@ -6,7 +6,7 @@ import landmarks from "./landmarks.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.landmarks to the landmarks json array
   state = {
     landmarks
   };
