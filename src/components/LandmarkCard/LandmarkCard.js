@@ -18,11 +18,11 @@ const LandmarkCard = props => (
           <strong>Location:</strong> {props.location}
         </li>
       </ul>
-  </div>*/}
+  </div>
     <span onClick={() => props.removeFriend(props.id)} className="remove">
       𝘅
-    </span>
-  </div>
+    </span>*/}
+</div>
 );
 
 export default LandmarkCard;
