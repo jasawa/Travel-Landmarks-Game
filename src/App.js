@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LandmarkCard from "./components/LandmarkCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Subtitle from "./components/Subtitle";
 import landmarks from "./landmarks.json";
 import "./App.css";
 
@@ -87,11 +88,11 @@ class App extends Component {
       <Wrapper>
         <Title>Landmarks Memory Game</Title>
 
-        <Title><h3 className="text-center">
+        <Subtitle>
           Unrepeated Clicks so far:  {this.state.scoreInThisRound}
           <br/>
           Your Best Score Ever:  {this.state.bestScoreEver}
-        </h3></Title>
+        </Subtitle>
         {this.state.landmarks.map(landmark => (
           <LandmarkCard
 
