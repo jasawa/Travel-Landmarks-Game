@@ -22,7 +22,7 @@ class App extends Component {
 
   // when a landmark is clicked
   setClicked = id => {
-    // Make a copy of the state of landmarks array to work with
+    // Make a copy of the state of the current landmarks array
     const landmarks = this.state.landmarks;
 
     // Filter this.state.landmarks for landmarks with an id equal to the id that was clicked
@@ -95,7 +95,8 @@ class App extends Component {
         </Subtitle>
         {this.state.landmarks.map(landmark => (
           <LandmarkCard
-
+            setClicked={this.setClicked}
+            name={landmark.name}
             id={landmark.id}
             key={landmark.id}
             image={landmark.image}
